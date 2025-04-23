@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StackForge Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">StackForge</div>
+    <div id="auth-panel" class="auth-panel"></div>
+  </header>
+  <main class="layout">
+    <section class="card">
+      <h2>Stacks</h2>
+      <form id="stack-form" class="stack-form">
+        <input id="stack-name" placeholder="name" required />
+        <input id="stack-path" placeholder="/stacks/demo/docker-compose.yml" required />
+        <button type="submit">Create</button>
+      </form>
+      <ul id="stack-list"></ul>
+    </section>
+    <section class="card">
+      <h2>Deploy log</h2>
+      <pre id="log-view" class="log-view">Select stack and deploy…</pre>
+    </section>
+  </main>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
