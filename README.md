@@ -40,3 +40,5 @@ uvicorn app.main:app --reload --port 8000
 Python 3.11 · FastAPI · SQLAlchemy 2 · Celery · Redis · PostgreSQL · TypeScript
 
 MIT
+
+<!-- dashboard screenshot -->
